@@ -9,8 +9,9 @@
 <body>
 
 <div id="container">
-    <h1>Welcome to Aarons "Everything Must Go" Store!</h1>
+    <h1><a href="/index.php/">Welcome to Aarons "Everything Must Go" Store!</a></h1>
     <ul class="nav nav-tabs">
         <li class="active"><a href="/index.php/product">Products</a></li>
+        <li class="active"><a href="/index.php/product/create">Create Product</a></li>
     </ul>
     <div id="body">

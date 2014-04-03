@@ -1,9 +1,4 @@
 <div id="productListContainer">
-    <div id="productCreateContainer">
-        <a href="/index.php/product/create" class="btn btn-success">
-            Create New Product
-        </a>
-    </div>
     <table class="table table-striped table-bordered" id="productList">
         <thead>
         <td>Name</td>
@@ -33,13 +28,14 @@
                     </select>
                 </td>
                 <td>
-                    <?php echo $product->created; ?>
+                    <?php echo date('r', $product->created); ?>
                 </td>
                 <td>
                     <?php echo $product->updated; ?>
                 </td>
                 <td>
-                    <button class="btn btn-info">Save Row</button>
+                    <button class="btn btn-info">Update</button>
+                    <a class="btn btn-danger" href="/index.php/product/delete/<?php echo $product->id; ?>">Delete</a>
                     </form>
                 </td>
             </tr>

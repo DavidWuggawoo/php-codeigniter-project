@@ -1,1 +1,0 @@
-<p class="bg bg-success">Product updated successfully.</p>
