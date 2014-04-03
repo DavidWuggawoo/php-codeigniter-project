@@ -1,1 +1,1 @@
-PRODUCT UPDATE ERROR
+<p class="bg bg-danger">There was an error saving the product, please retry.</p>

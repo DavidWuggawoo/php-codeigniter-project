@@ -25,8 +25,7 @@ class Product extends CI_Controller {
 
 
     public function create() {
-        echo 'create';
-        exit;
+        $this->load->template('product_create');
     }
 
 
@@ -50,9 +49,9 @@ class Product extends CI_Controller {
 
             $this->db->where('id', $id);
             if ($this->db->update('Product', $saveFields)) {
-                return $this->load->view('product_update_success');
+                return $this->load->template('product_update_success');
             } else {
-                $this->load->view('product_update_success');
+                $this->load->template('product_update_success');
             }
             exit;
         }

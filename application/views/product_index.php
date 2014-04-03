@@ -1,13 +1,14 @@
-        <a href="">
+        <a href="/index.php/product/create" class="btn btn-success">
             Create New Product
         </a>
-        <table>
+        <table class="table table-striped table-bordered">
             <thead>
             <td>Name</td>
             <td>Description</td>
             <td>Enabled</td>
             <td>Created</td>
             <td>Updated</td>
+            <td></td>
             </thead>
             <tbody>
             <?php foreach ($products as $product) { ?>
@@ -35,7 +36,7 @@
                         <?php echo $product->updated; ?>
                     </td>
                     <td>
-                        <button class="btn btn-success">Save Row</button>
+                        <button class="btn btn-info">Save Row</button>
                         </form>
                     </td>
                 </tr>
