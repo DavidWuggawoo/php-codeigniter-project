@@ -6,7 +6,7 @@
             </tr>
             <tr>
                 <td>
-                    <input name="name" type="name" value="" />
+                    <input name="name" type="name" value="" placeholder="Product Name" />
                 </td>
             </tr>
             <tr>
@@ -14,7 +14,7 @@
             </tr>
             <tr>
                 <td>
-                    <textarea id="description" name="description"></textarea>
+                    <textarea id="description" name="description" placeholder="Product Description"></textarea>
                 </td>
             </tr>
             <tr>
