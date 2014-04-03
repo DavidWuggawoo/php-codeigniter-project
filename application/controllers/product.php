@@ -12,7 +12,7 @@ class Product extends CI_Controller {
 
     public function index() {
 
-        $query = $this->db->query(' SELECT * FROM Product ');
+        $query = $this->db->get('Product');
         $results = array();
 
         foreach ($query->result() as $row) {
