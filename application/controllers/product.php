@@ -8,6 +8,7 @@ class Product extends CI_Controller {
     private $putFields = array('name', 'description', 'enabled');
     private $deleteFields = array('id');
 
+
     public function index() {
 
         $query = $this->db->query(' SELECT * FROM Product ');
@@ -19,7 +20,7 @@ class Product extends CI_Controller {
 
         $results['enabledOptions'] = array('Enabled' => 1, 'Disabled' => 0);
 
-        $this->load->view('product_index', $results);
+        $this->load->template('product_index', $results);
     }
 
 
